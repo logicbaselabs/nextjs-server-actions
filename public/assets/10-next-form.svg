@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Boundary: Server Actions vs Route Handlers
+  </text>
+  <text x="550" y="78" text-anchor="middle" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Choose based on who calls it and what the job needs
+  </text>
+
+  <!-- Decision -->
+  <rect x="140" y="130" width="820" height="90" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="550" y="175" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Is this a UI-driven mutation inside your Next.js app?
+  </text>
+
+  <line x1="550" y1="220" x2="330" y2="300" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="445" y="275" text-anchor="middle" font-size="12"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Yes</text>
+
+  <line x1="550" y1="220" x2="770" y2="300" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="655" y="275" text-anchor="middle" font-size="12"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">No</text>
+
+  <!-- Server Actions -->
+  <rect x="120" y="310" width="420" height="270" rx="14" fill="#f7f7ff" stroke="#111" stroke-width="2"/>
+  <text x="330" y="350" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Use Server Actions</text>
+  <text x="330" y="384" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Forms + mutations</text>
+  <text x="330" y="410" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Validation + pending UI</text>
+  <text x="330" y="436" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">revalidate / redirect / refresh</text>
+  <text x="330" y="468" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Caller: your UI</text>
+
+  <!-- Route Handlers -->
+  <rect x="560" y="310" width="420" height="270" rx="14" fill="#fff7f7" stroke="#111" stroke-width="2"/>
+  <text x="770" y="350" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Use Route Handlers</text>
+  <text x="770" y="384" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Webhooks / public APIs</text>
+  <text x="770" y="410" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Custom headers / auth</text>
+  <text x="770" y="436" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Streaming responses</text>
+  <text x="770" y="468" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Caller: external clients</text>
+</svg>

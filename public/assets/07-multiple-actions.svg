@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Validation Loop (Zod + useActionState)
+  </text>
+  <text x="550" y="78" text-anchor="middle" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Server returns structured state → UI renders errors or updates notes
+  </text>
+
+  <rect x="60" y="140" width="300" height="120" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="210" y="188" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Form submit</text>
+  <text x="210" y="218" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">FormData { text }</text>
+
+  <line x1="360" y1="200" x2="470" y2="200" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="480" y="120" width="560" height="160" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="760" y="160" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Server Action</text>
+  <text x="760" y="190" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">noteSchema.safeParse({ text })</text>
+
+  <line x1="760" y1="280" x2="760" y2="330" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Decision -->
+  <rect x="480" y="340" width="260" height="170" rx="14" fill="#fff7f7" stroke="#111" stroke-width="2"/>
+  <text x="610" y="382" text-anchor="middle" font-size="15" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Invalid</text>
+  <text x="610" y="412" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">return { ok:false,</text>
+  <text x="610" y="436" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">errors: { text: ... } }</text>
+  <text x="610" y="468" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">UI shows error</text>
+
+  <rect x="780" y="340" width="260" height="170" rx="14" fill="#f7f7ff" stroke="#111" stroke-width="2"/>
+  <text x="910" y="382" text-anchor="middle" font-size="15" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Valid</text>
+  <text x="910" y="412" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">mutate: addNote(text)</text>
+  <text x="910" y="438" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">return { ok:true, notes }</text>
+  <text x="910" y="468" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">UI updates list</text>
+
+  <line x1="760" y1="500" x2="210" y2="520" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="485" y="548" text-anchor="middle" font-size="12"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">useActionState receives next state</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Pending State: Two Hooks, Two Stories
+  </text>
+
+  <!-- Left: useFormStatus -->
+  <rect x="70" y="130" width="460" height="420" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="300" y="170" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Form submission</text>
+  <text x="300" y="200" text-anchor="middle" font-size="14"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">useFormStatus() inside the form</text>
+
+  <rect x="140" y="250" width="320" height="70" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="1.5"/>
+  <text x="300" y="292" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">pending → disable submit button</text>
+
+  <line x1="300" y1="330" x2="300" y2="405" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="300" y="380" text-anchor="middle" font-size="12"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">auto wired</text>
+
+  <rect x="140" y="410" width="320" height="90" rx="12" fill="#f7f7ff" stroke="#111" stroke-width="1.5"/>
+  <text x="300" y="448" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Works with:</text>
+  <text x="300" y="474" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">&lt;form action={...}&gt;</text>
+
+  <!-- Right: useActionState -->
+  <rect x="570" y="130" width="460" height="420" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="800" y="170" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Button click / non-form</text>
+  <text x="800" y="200" text-anchor="middle" font-size="14"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">useActionState() + startTransition()</text>
+
+  <rect x="640" y="250" width="320" height="70" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="1.5"/>
+  <text x="800" y="292" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">isPending → disable button</text>
+
+  <line x1="800" y1="330" x2="800" y2="405" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="800" y="380" text-anchor="middle" font-size="12"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">manual</text>
+
+  <rect x="640" y="410" width="320" height="90" rx="12" fill="#f7f7ff" stroke="#111" stroke-width="1.5"/>
+  <text x="800" y="448" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Works with:</text>
+  <text x="800" y="474" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">onClick → transition(action)</text>
+</svg>

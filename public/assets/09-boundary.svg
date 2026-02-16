@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    Keeping UI in Sync After Mutations
+  </text>
+  <text x="550" y="78" text-anchor="middle" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
+    cookies + revalidatePath + redirect (and sometimes refresh)
+  </text>
+
+  <!-- /notes/new -->
+  <rect x="70" y="140" width="340" height="170" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="240" y="182" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">/notes/new</text>
+  <text x="240" y="212" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Client page</text>
+  <text x="240" y="238" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">form → createNoteAndRedirect</text>
+
+  <line x1="410" y1="225" x2="520" y2="225" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- action -->
+  <rect x="530" y="120" width="500" height="210" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="780" y="160" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Server Action</text>
+  <text x="780" y="192" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">validate → addNote()</text>
+  <text x="780" y="218" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">cookies().set("lastNoteKind")</text>
+  <text x="780" y="244" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">revalidatePath("/notes")</text>
+  <text x="780" y="270" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">redirect("/notes")</text>
+
+  <line x1="780" y1="330" x2="780" y2="395" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- /notes -->
+  <rect x="530" y="410" width="500" height="170" rx="14" fill="#f7f7ff" stroke="#111" stroke-width="2"/>
+  <text x="780" y="452" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">/notes</text>
+  <text x="780" y="484" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Server-rendered page</text>
+  <text x="780" y="510" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">reads listNotes() + cookies()</text>
+  <text x="780" y="536" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">shows fresh UI ✅</text>
+
+  <!-- note about refresh -->
+  <rect x="70" y="360" width="340" height="220" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="240" y="402" text-anchor="middle" font-size="16" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Also useful</text>
+  <text x="240" y="434" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">refresh()</text>
+  <text x="240" y="460" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">when you want to</text>
+  <text x="240" y="486" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">re-fetch the current route</text>
+  <text x="240" y="516" text-anchor="middle" font-size="13"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">after a mutation</text>
+</svg>
