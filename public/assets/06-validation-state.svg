@@ -1,53 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
-    </marker>
-  </defs>
-
-  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
-    Pending State: Two Hooks, Two Stories
-  </text>
-
-  <!-- Left: useFormStatus -->
-  <rect x="70" y="130" width="460" height="420" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="300" y="170" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Form submission</text>
-  <text x="300" y="200" text-anchor="middle" font-size="14"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">useFormStatus() inside the form</text>
-
-  <rect x="140" y="250" width="320" height="70" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="1.5"/>
-  <text x="300" y="292" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">pending → disable submit button</text>
-
-  <line x1="300" y1="330" x2="300" y2="405" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="300" y="380" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">auto wired</text>
-
-  <rect x="140" y="410" width="320" height="90" rx="12" fill="#f7f7ff" stroke="#111" stroke-width="1.5"/>
-  <text x="300" y="448" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Works with:</text>
-  <text x="300" y="474" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">&lt;form action={...}&gt;</text>
-
-  <!-- Right: useActionState -->
-  <rect x="570" y="130" width="460" height="420" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="800" y="170" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Button click / non-form</text>
-  <text x="800" y="200" text-anchor="middle" font-size="14"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">useActionState() + startTransition()</text>
-
-  <rect x="640" y="250" width="320" height="70" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="1.5"/>
-  <text x="800" y="292" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">isPending → disable button</text>
-
-  <line x1="800" y1="330" x2="800" y2="405" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="800" y="380" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">manual</text>
-
-  <rect x="640" y="410" width="320" height="90" rx="12" fill="#f7f7ff" stroke="#111" stroke-width="1.5"/>
-  <text x="800" y="448" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Works with:</text>
-  <text x="800" y="474" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">onClick → transition(action)</text>
+<svg width="1100" height="600" viewBox="0 0 1100 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="26" letter-spacing="0em"><tspan x="308.726" y="46.9545">Pending State: Two Hooks, Two Stories </tspan></text>
+<path d="M516 130H84C76.268 130 70 136.268 70 144V536C70 543.732 76.268 550 84 550H516C523.732 550 530 543.732 530 536V144C530 136.268 523.732 130 516 130Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="224.889" y="169.545">Form submission</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="14" letter-spacing="0em"><tspan x="193.749" y="199.591">useFormStatus() inside the form</tspan></text>
+<path d="M448 250H152C145.373 250 140 255.373 140 262V308C140 314.627 145.373 320 152 320H448C454.627 320 460 314.627 460 308V262C460 255.373 454.627 250 448 250Z" fill="#F7F7F7" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="198.653" y="291.727">pending &#x2192; disable submit button</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="230.07" y="367.864">auto wired</tspan></text>
+<path d="M448 410H152C145.373 410 140 415.373 140 422V488C140 494.627 145.373 500 152 500H448C454.627 500 460 494.627 460 488V422C460 415.373 454.627 410 448 410Z" fill="#F7F7FF" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="264.212" y="447.727">Works with:</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="242.217" y="473.727">&#60;form action={...}&#62;</tspan></text>
+<path d="M1016 130H584C576.268 130 570 136.268 570 144V536C570 543.732 576.268 550 584 550H1016C1023.73 550 1030 543.732 1030 536V144C1030 136.268 1023.73 130 1016 130Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="698.284" y="169.545">Button click / non-form</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="14" letter-spacing="0em"><tspan x="683.037" y="199.591">useActionState() + startTransition()</tspan></text>
+<path d="M948 250H652C645.373 250 640 255.373 640 262V308C640 314.627 645.373 320 652 320H948C954.627 320 960 314.627 960 308V262C960 255.373 954.627 250 948 250Z" fill="#F7F7F7" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="716.179" y="291.727">isPending &#x2192; disable button</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="809.604" y="367.864">manual</tspan></text>
+<path d="M948 410H652C645.373 410 640 415.373 640 422V488C640 494.627 645.373 500 652 500H948C954.627 500 960 494.627 960 488V422C960 415.373 954.627 410 948 410Z" fill="#F7F7FF" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="764.212" y="447.727">Works with:</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="715.125" y="473.727">onClick &#x2192; transition(action)</tspan></text>
+<path d="M300 410L311.547 390H288.453L300 410ZM300 320H298V392H300H302V320H300Z" fill="#111111"/>
+<path d="M800 410L811.547 390H788.453L800 410ZM800 320H798V392H800H802V320H800Z" fill="#111111"/>
 </svg>
