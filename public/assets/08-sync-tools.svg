@@ -1,69 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
-    </marker>
-  </defs>
-
-  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
-    Advanced Patterns: Multiple Actions + Extra Args + Keyboard Submit
-  </text>
-
-  <!-- Form -->
-  <rect x="70" y="110" width="520" height="480" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="330" y="150" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">One Form</text>
-  <text x="330" y="178" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">action={createNote}</text>
-
-  <rect x="130" y="210" width="400" height="120" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="1.5"/>
-  <text x="330" y="248" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">textarea name="text"</text>
-  <text x="330" y="276" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Cmd/Ctrl + Enter → requestSubmit()</text>
-
-  <rect x="130" y="350" width="190" height="60" rx="12" fill="#fff" stroke="#111" stroke-width="1.5"/>
-  <text x="225" y="385" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Submit</text>
-
-  <rect x="340" y="350" width="190" height="60" rx="12" fill="#fff" stroke="#111" stroke-width="1.5"/>
-  <text x="435" y="378" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Important</text>
-  <text x="435" y="402" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">formAction={createImportantNote}</text>
-
-  <!-- Notes list -->
-  <rect x="130" y="430" width="400" height="130" rx="12" fill="#f7f7ff" stroke="#111" stroke-width="1.5"/>
-  <text x="330" y="460" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Notes list</text>
-  <text x="330" y="488" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Each item has a delete button</text>
-
-  <!-- bind -->
-  <rect x="650" y="160" width="380" height="150" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="840" y="200" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Extra arguments</text>
-  <text x="840" y="232" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">deleteNote(noteId)</text>
-  <text x="840" y="258" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">bind(null, note.id)</text>
-
-  <line x1="590" y1="495" x2="650" y2="260" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="642" y="420" text-anchor="end" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">delete button → bound action</text>
-
-  <!-- keyboard -->
-  <rect x="650" y="350" width="380" height="170" rx="14" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="840" y="392" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Keyboard submit</text>
-  <text x="840" y="424" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">onKeyDown in textarea</text>
-  <text x="840" y="450" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Cmd/Ctrl + Enter</text>
-  <text x="840" y="476" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">form.requestSubmit()</text>
-
-  <line x1="530" y1="270" x2="650" y2="430" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="610" y="340" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">shortcut triggers submit</text>
+<svg width="1100" height="650" viewBox="0 0 1100 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="26" letter-spacing="0em"><tspan x="127.106" y="46.9545">Advanced Patterns: Multiple Actions + Extra Args + Keyboard Submit </tspan></text>
+<path d="M576 110H84C76.268 110 70 116.268 70 124V576C70 583.732 76.268 590 84 590H576C583.732 590 590 583.732 590 576V124C590 116.268 583.732 110 576 110Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="287.584" y="149.545">One Form</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="267.831" y="177.727">action={createNote}</tspan></text>
+<path d="M518 210H142C135.373 210 130 215.373 130 222V318C130 324.627 135.373 330 142 330H518C524.627 330 530 324.627 530 318V222C530 215.373 524.627 210 518 210Z" fill="#F7F7F7" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="264.562" y="247.727">textarea name=&#34;text&#34;</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="218.611" y="275.727">Cmd/Ctrl + Enter &#x2192; requestSubmit()</tspan></text>
+<path d="M308 350H142C135.373 350 130 355.373 130 362V398C130 404.627 135.373 410 142 410H308C314.627 410 320 404.627 320 398V362C320 355.373 314.627 350 308 350Z" fill="white" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="203.488" y="384.727">Submit</tspan></text>
+<path d="M518 350H352C345.373 350 340 355.373 340 362V398C340 404.627 345.373 410 352 410H518C524.627 410 530 404.627 530 398V362C530 355.373 524.627 350 518 350Z" fill="white" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="404.963" y="377.727">Important</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="10.0606" letter-spacing="0em"><tspan x="352.074" y="395.658">formAction={createImportantNote}</tspan></text>
+<path d="M518 430H142C135.373 430 130 435.373 130 442V548C130 554.627 135.373 560 142 560H518C524.627 560 530 554.627 530 548V442C530 435.373 524.627 430 518 430Z" fill="#F7F7FF" stroke="#111111" stroke-width="1.5"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="301.055" y="480.727">Notes list</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="245.584" y="508.864">Each item has a delete button</tspan></text>
+<path d="M1018.51 160H729.495C723.146 160 718 166.268 718 174V296C718 303.732 723.146 310 729.495 310H1018.51C1024.85 310 1030 303.732 1030 296V174C1030 166.268 1024.85 160 1018.51 160Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="807.332" y="209.545">Extra arguments</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="821.614" y="241.727">deleteNote(noteId)</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="826.4" y="267.727">bind(null, note.id)</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="10.1538" letter-spacing="0em"><tspan x="477.291" y="421.845">delete button &#x2192; bound action</tspan></text>
+<path d="M1018.51 350H729.495C723.146 350 718 356.268 718 364V506C718 513.732 723.146 520 729.495 520H1018.51C1024.85 520 1030 513.732 1030 506V364C1030 356.268 1024.85 350 1018.51 350Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="805.381" y="401.545">Keyboard submit</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="809.23" y="433.727">onKeyDown in textarea</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="828.063" y="459.727">Cmd/Ctrl + Enter</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="814.473" y="485.727">form.requestSubmit()</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="9.85401" letter-spacing="0em"><tspan x="564.325" y="292.583">shortcut triggers submit</tspan></text>
+<path d="M718 235L708.499 241.563L718.933 246.509L718 235ZM590 505L590.904 505.428L715.048 243.561L714.145 243.132L713.241 242.704L589.096 504.572L590 505Z" fill="#111111"/>
+<path d="M718 447L715.456 438.535L709.397 444.97L718 447ZM530 270L529.475 270.557L712.459 442.835L712.984 442.277L713.508 441.72L530.525 269.443L530 270Z" fill="#111111"/>
 </svg>

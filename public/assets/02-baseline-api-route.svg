@@ -1,62 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
-    </marker>
-  </defs>
-
-  <text x="550" y="48" text-anchor="middle" font-size="26" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
-    Baseline: Route Handler API
-  </text>
-  <text x="550" y="78" text-anchor="middle" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">
-    Client fetches JSON → Route Handler → Store → JSON response
-  </text>
-
-  <!-- Client -->
-  <rect x="60" y="160" width="260" height="120" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="190" y="210" text-anchor="middle" font-size="16" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Client UI</text>
-  <text x="190" y="238" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">fetch("/api/notes")</text>
-
-  <!-- Arrow to route handler -->
-  <line x1="330" y1="220" x2="450" y2="220" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="390" y="200" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">HTTP</text>
-
-  <!-- Route Handler -->
-  <rect x="460" y="130" width="300" height="180" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="610" y="168" text-anchor="middle" font-size="16" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Route Handler</text>
-  <text x="610" y="196" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">GET → listNotes()</text>
-  <text x="610" y="222" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">POST → addNote(text)</text>
-  <text x="610" y="248" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">return Response.json(...)</text>
-
-  <!-- Arrow to store -->
-  <line x1="610" y1="320" x2="610" y2="410" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="610" y="365" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">calls</text>
-
-  <!-- Store -->
-  <rect x="430" y="420" width="360" height="130" rx="12" fill="#f7f7f7" stroke="#111" stroke-width="2"/>
-  <text x="610" y="458" text-anchor="middle" font-size="16" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">In-memory store</text>
-  <text x="610" y="486" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">notes[] lives on the server</text>
-  <text x="610" y="512" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">Route Handler is the contract</text>
-
-  <!-- Response back to client -->
-  <line x1="760" y1="220" x2="880" y2="220" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="820" y="200" text-anchor="middle" font-size="12"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">JSON</text>
-
-  <rect x="890" y="160" width="250" height="120" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
-  <text x="1015" y="210" text-anchor="middle" font-size="16" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">UI updates</text>
-  <text x="1015" y="238" text-anchor="middle" font-size="13"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto">setNotes(data.notes)</text>
+<svg width="1100" height="600" viewBox="0 0 1100 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="26" letter-spacing="0em"><tspan x="359.616" y="46.9545">Baseline: Route Handler API </tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" letter-spacing="0em"><tspan x="284.672" y="77.3182">Client fetches JSON &#x2192; Route Handler &#x2192; Store &#x2192; JSON response </tspan></text>
+<path d="M254.615 160H50.3846C44.6494 160 40 165.373 40 172V268C40 274.627 44.6494 280 50.3846 280H254.615C260.351 280 265 274.627 265 268V172C265 165.373 260.351 160 254.615 160Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="106.328" y="209.318">Client UI</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="83.29" y="237.727">fetch(&#34;/api/notes&#34;)</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="304.051" y="199.864">HTTP</tspan></text>
+<path d="M678 130H402C395.373 130 390 135.373 390 142V298C390 304.627 395.373 310 402 310H678C684.627 310 690 304.627 690 298V142C690 135.373 684.627 130 678 130Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="484.336" y="177.318">Route Handler</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="485.353" y="205.727">GET &#x2192; listNotes()</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="469.541" y="231.727">POST &#x2192; addNote(text)</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="465.11" y="257.727">return Response.json(...)</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="497.285" y="364.864">calls</tspan></text>
+<path d="M718 420H382C375.373 420 370 425.373 370 432V538C370 544.627 375.373 550 382 550H718C724.627 550 730 544.627 730 538V432C730 425.373 724.627 420 718 420Z" fill="#F7F7F7" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="484.492" y="457.318">In-memory store</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="469.899" y="485.727">notes[] lives on the server</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="460.003" y="511.727">Route Handler is the contract</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" letter-spacing="0em"><tspan x="733.828" y="199.864">JSON</tspan></text>
+<path d="M1058 160H832C825.373 160 820 165.373 820 172V268C820 274.627 825.373 280 832 280H1058C1064.63 280 1070 274.627 1070 268V172C1070 165.373 1064.63 160 1058 160Z" fill="white" stroke="#111111" stroke-width="2"/>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="902.969" y="209.318">UI updates</tspan></text>
+<text fill="black" style="white-space: pre" xml:space="preserve" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="13" letter-spacing="0em"><tspan x="879.778" y="237.727">setNotes(data.notes)</tspan></text>
+<path d="M391 220L381 214.226V225.774L391 220ZM264 220V221H382V220V219H264V220Z" fill="#111111"/>
+<path d="M821 220L811 214.226V225.774L821 220ZM690 220V221H812V220V219H690V220Z" fill="#111111"/>
+<path d="M533 421L538.774 411H527.226L533 421ZM533 310H532V412H533H534V310H533Z" fill="#111111"/>
 </svg>
